@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400" height="600" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .title { font-size: 18px; font-weight: bold; text-anchor: middle; }
+            .node-label { font-size: 12px; font-weight: bold; text-anchor: middle; dominant-baseline: middle; fill: white; }
+            .edge-competitor { stroke: #999; stroke-width: 2; }
+            .edge-ionq { stroke: #4D96FF; stroke-width: 1; opacity: 0.2; }
+            .node-competitor { fill: #FF6B6B; stroke: #CC5555; stroke-width: 2; }
+            .node-ionq { fill: #4D96FF; stroke: #2565CC; stroke-width: 2; }
+        </style>
+    </defs>
+
+    <!-- Background -->
+    <rect width="1400" height="600" fill="white"/>
+
+    <!-- LEFT: Competitor Linear Topology -->
+    <g id="competitor">
+        <!-- Title -->
+        <text x="350" y="30" class="title">Competitor Architecture</text>
+        <text x="350" y="55" class="title" font-size="14">(Nearest Neighbor Only)</text>
+
+        <!-- Edges (linear chain) -->
+        <line x1="100.0" y1="300" x2="145.45454545454544" y2="300" class="edge-competitor"/>
+        <line x1="145.45454545454544" y1="300" x2="190.9090909090909" y2="300" class="edge-competitor"/>
+        <line x1="190.9090909090909" y1="300" x2="236.36363636363637" y2="300" class="edge-competitor"/>
+        <line x1="236.36363636363637" y1="300" x2="281.8181818181818" y2="300" class="edge-competitor"/>
+        <line x1="281.8181818181818" y1="300" x2="327.27272727272725" y2="300" class="edge-competitor"/>
+        <line x1="327.27272727272725" y1="300" x2="372.72727272727275" y2="300" class="edge-competitor"/>
+        <line x1="372.72727272727275" y1="300" x2="418.1818181818182" y2="300" class="edge-competitor"/>
+        <line x1="418.1818181818182" y1="300" x2="463.6363636363636" y2="300" class="edge-competitor"/>
+        <line x1="463.6363636363636" y1="300" x2="509.09090909090907" y2="300" class="edge-competitor"/>
+        <line x1="509.09090909090907" y1="300" x2="554.5454545454545" y2="300" class="edge-competitor"/>
+        <line x1="554.5454545454545" y1="300" x2="600.0" y2="300" class="edge-competitor"/>
+        <circle cx="100.0" cy="300" r="15" class="node-competitor"/>
+        <text x="100.0" y="300" class="node-label">0</text>
+        <circle cx="145.45454545454544" cy="300" r="15" class="node-competitor"/>
+        <text x="145.45454545454544" y="300" class="node-label">1</text>
+        <circle cx="190.9090909090909" cy="300" r="15" class="node-competitor"/>
+        <text x="190.9090909090909" y="300" class="node-label">2</text>
+        <circle cx="236.36363636363637" cy="300" r="15" class="node-competitor"/>
+        <text x="236.36363636363637" y="300" class="node-label">3</text>
+        <circle cx="281.8181818181818" cy="300" r="15" class="node-competitor"/>
+        <text x="281.8181818181818" y="300" class="node-label">4</text>
+        <circle cx="327.27272727272725" cy="300" r="15" class="node-competitor"/>
+        <text x="327.27272727272725" y="300" class="node-label">5</text>
+        <circle cx="372.72727272727275" cy="300" r="15" class="node-competitor"/>
+        <text x="372.72727272727275" y="300" class="node-label">6</text>
+        <circle cx="418.1818181818182" cy="300" r="15" class="node-competitor"/>
+        <text x="418.1818181818182" y="300" class="node-label">7</text>
+        <circle cx="463.6363636363636" cy="300" r="15" class="node-competitor"/>
+        <text x="463.6363636363636" y="300" class="node-label">8</text>
+        <circle cx="509.09090909090907" cy="300" r="15" class="node-competitor"/>
+        <text x="509.09090909090907" y="300" class="node-label">9</text>
+        <circle cx="554.5454545454545" cy="300" r="15" class="node-competitor"/>
+        <text x="554.5454545454545" y="300" class="node-label">10</text>
+        <circle cx="600.0" cy="300" r="15" class="node-competitor"/>
+        <text x="600.0" y="300" class="node-label">11</text>
+    </g>
+
+    <!-- RIGHT: IonQ All-to-All Topology -->
+    <g id="ionq">
+        <text x="1050" y="30" class="title">IonQ Architecture</text>
+        <text x="1050" y="55" class="title" font-size="14">(All-to-All Connectivity)</text>
+        <line x1="1150.0" y1="300.0" x2="1136.6025403784438" y2="350.0" class="edge-ionq"/>
+        <line x1="1150.0" y1="300.0" x2="1100.0" y2="386.60254037844385" class="edge-ionq"/>
+        <line x1="1150.0" y1="300.0" x2="1050.0" y2="400.0" class="edge-ionq"/>
+        <line x1="1150.0" y1="300.0" x2="1000.0" y2="386.6025403784439" class="edge-ionq"/>
+        <line x1="1150.0" y1="300.0" x2="963.3974596215561" y2="350.0" class="edge-ionq"/>
+        <line x1="1150.0" y1="300.0" x2="950.0" y2="300.0" class="edge-ionq"/>
+        <line x1="1150.0" y1="300.0" x2="963.3974596215561" y2="250.00000000000003" class="edge-ionq"/>
+        <line x1="1150.0" y1="300.0" x2="1000.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="1150.0" y1="300.0" x2="1050.0" y2="200.0" class="edge-ionq"/>
+        <line x1="1150.0" y1="300.0" x2="1100.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="1150.0" y1="300.0" x2="1136.6025403784438" y2="249.99999999999994" class="edge-ionq"/>
+        <line x1="1136.6025403784438" y1="350.0" x2="1100.0" y2="386.60254037844385" class="edge-ionq"/>
+        <line x1="1136.6025403784438" y1="350.0" x2="1050.0" y2="400.0" class="edge-ionq"/>
+        <line x1="1136.6025403784438" y1="350.0" x2="1000.0" y2="386.6025403784439" class="edge-ionq"/>
+        <line x1="1136.6025403784438" y1="350.0" x2="963.3974596215561" y2="350.0" class="edge-ionq"/>
+        <line x1="1136.6025403784438" y1="350.0" x2="950.0" y2="300.0" class="edge-ionq"/>
+        <line x1="1136.6025403784438" y1="350.0" x2="963.3974596215561" y2="250.00000000000003" class="edge-ionq"/>
+        <line x1="1136.6025403784438" y1="350.0" x2="1000.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="1136.6025403784438" y1="350.0" x2="1050.0" y2="200.0" class="edge-ionq"/>
+        <line x1="1136.6025403784438" y1="350.0" x2="1100.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="1136.6025403784438" y1="350.0" x2="1136.6025403784438" y2="249.99999999999994" class="edge-ionq"/>
+        <line x1="1100.0" y1="386.60254037844385" x2="1050.0" y2="400.0" class="edge-ionq"/>
+        <line x1="1100.0" y1="386.60254037844385" x2="1000.0" y2="386.6025403784439" class="edge-ionq"/>
+        <line x1="1100.0" y1="386.60254037844385" x2="963.3974596215561" y2="350.0" class="edge-ionq"/>
+        <line x1="1100.0" y1="386.60254037844385" x2="950.0" y2="300.0" class="edge-ionq"/>
+        <line x1="1100.0" y1="386.60254037844385" x2="963.3974596215561" y2="250.00000000000003" class="edge-ionq"/>
+        <line x1="1100.0" y1="386.60254037844385" x2="1000.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="1100.0" y1="386.60254037844385" x2="1050.0" y2="200.0" class="edge-ionq"/>
+        <line x1="1100.0" y1="386.60254037844385" x2="1100.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="1100.0" y1="386.60254037844385" x2="1136.6025403784438" y2="249.99999999999994" class="edge-ionq"/>
+        <line x1="1050.0" y1="400.0" x2="1000.0" y2="386.6025403784439" class="edge-ionq"/>
+        <line x1="1050.0" y1="400.0" x2="963.3974596215561" y2="350.0" class="edge-ionq"/>
+        <line x1="1050.0" y1="400.0" x2="950.0" y2="300.0" class="edge-ionq"/>
+        <line x1="1050.0" y1="400.0" x2="963.3974596215561" y2="250.00000000000003" class="edge-ionq"/>
+        <line x1="1050.0" y1="400.0" x2="1000.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="1050.0" y1="400.0" x2="1050.0" y2="200.0" class="edge-ionq"/>
+        <line x1="1050.0" y1="400.0" x2="1100.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="1050.0" y1="400.0" x2="1136.6025403784438" y2="249.99999999999994" class="edge-ionq"/>
+        <line x1="1000.0" y1="386.6025403784439" x2="963.3974596215561" y2="350.0" class="edge-ionq"/>
+        <line x1="1000.0" y1="386.6025403784439" x2="950.0" y2="300.0" class="edge-ionq"/>
+        <line x1="1000.0" y1="386.6025403784439" x2="963.3974596215561" y2="250.00000000000003" class="edge-ionq"/>
+        <line x1="1000.0" y1="386.6025403784439" x2="1000.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="1000.0" y1="386.6025403784439" x2="1050.0" y2="200.0" class="edge-ionq"/>
+        <line x1="1000.0" y1="386.6025403784439" x2="1100.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="1000.0" y1="386.6025403784439" x2="1136.6025403784438" y2="249.99999999999994" class="edge-ionq"/>
+        <line x1="963.3974596215561" y1="350.0" x2="950.0" y2="300.0" class="edge-ionq"/>
+        <line x1="963.3974596215561" y1="350.0" x2="963.3974596215561" y2="250.00000000000003" class="edge-ionq"/>
+        <line x1="963.3974596215561" y1="350.0" x2="1000.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="963.3974596215561" y1="350.0" x2="1050.0" y2="200.0" class="edge-ionq"/>
+        <line x1="963.3974596215561" y1="350.0" x2="1100.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="963.3974596215561" y1="350.0" x2="1136.6025403784438" y2="249.99999999999994" class="edge-ionq"/>
+        <line x1="950.0" y1="300.0" x2="963.3974596215561" y2="250.00000000000003" class="edge-ionq"/>
+        <line x1="950.0" y1="300.0" x2="1000.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="950.0" y1="300.0" x2="1050.0" y2="200.0" class="edge-ionq"/>
+        <line x1="950.0" y1="300.0" x2="1100.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="950.0" y1="300.0" x2="1136.6025403784438" y2="249.99999999999994" class="edge-ionq"/>
+        <line x1="963.3974596215561" y1="250.00000000000003" x2="1000.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="963.3974596215561" y1="250.00000000000003" x2="1050.0" y2="200.0" class="edge-ionq"/>
+        <line x1="963.3974596215561" y1="250.00000000000003" x2="1100.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="963.3974596215561" y1="250.00000000000003" x2="1136.6025403784438" y2="249.99999999999994" class="edge-ionq"/>
+        <line x1="1000.0" y1="213.39745962155615" x2="1050.0" y2="200.0" class="edge-ionq"/>
+        <line x1="1000.0" y1="213.39745962155615" x2="1100.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="1000.0" y1="213.39745962155615" x2="1136.6025403784438" y2="249.99999999999994" class="edge-ionq"/>
+        <line x1="1050.0" y1="200.0" x2="1100.0" y2="213.39745962155615" class="edge-ionq"/>
+        <line x1="1050.0" y1="200.0" x2="1136.6025403784438" y2="249.99999999999994" class="edge-ionq"/>
+        <line x1="1100.0" y1="213.39745962155615" x2="1136.6025403784438" y2="249.99999999999994" class="edge-ionq"/>
+        <circle cx="1150.0" cy="300.0" r="12" class="node-ionq"/>
+        <text x="1150.0" y="300.0" class="node-label" font-size="10">0</text>
+        <circle cx="1136.6025403784438" cy="350.0" r="12" class="node-ionq"/>
+        <text x="1136.6025403784438" y="350.0" class="node-label" font-size="10">1</text>
+        <circle cx="1100.0" cy="386.60254037844385" r="12" class="node-ionq"/>
+        <text x="1100.0" y="386.60254037844385" class="node-label" font-size="10">2</text>
+        <circle cx="1050.0" cy="400.0" r="12" class="node-ionq"/>
+        <text x="1050.0" y="400.0" class="node-label" font-size="10">3</text>
+        <circle cx="1000.0" cy="386.6025403784439" r="12" class="node-ionq"/>
+        <text x="1000.0" y="386.6025403784439" class="node-label" font-size="10">4</text>
+        <circle cx="963.3974596215561" cy="350.0" r="12" class="node-ionq"/>
+        <text x="963.3974596215561" y="350.0" class="node-label" font-size="10">5</text>
+        <circle cx="950.0" cy="300.0" r="12" class="node-ionq"/>
+        <text x="950.0" y="300.0" class="node-label" font-size="10">6</text>
+        <circle cx="963.3974596215561" cy="250.00000000000003" r="12" class="node-ionq"/>
+        <text x="963.3974596215561" y="250.00000000000003" class="node-label" font-size="10">7</text>
+        <circle cx="1000.0" cy="213.39745962155615" r="12" class="node-ionq"/>
+        <text x="1000.0" y="213.39745962155615" class="node-label" font-size="10">8</text>
+        <circle cx="1050.0" cy="200.0" r="12" class="node-ionq"/>
+        <text x="1050.0" y="200.0" class="node-label" font-size="10">9</text>
+        <circle cx="1100.0" cy="213.39745962155615" r="12" class="node-ionq"/>
+        <text x="1100.0" y="213.39745962155615" class="node-label" font-size="10">10</text>
+        <circle cx="1136.6025403784438" cy="249.99999999999994" r="12" class="node-ionq"/>
+        <text x="1136.6025403784438" y="249.99999999999994" class="node-label" font-size="10">11</text>
+    </g>
+</svg>
