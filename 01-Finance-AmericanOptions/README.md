@@ -93,3 +93,19 @@ python finance_comparator_demo.py
 - This proves enterprise support for quantum finance workflows
 
 **But for a live demo:** The Python script above is faster and more interactive than setting up Q# environment.
+
+---
+
+## Disclaimer
+
+This demonstration code is provided for educational and illustrative purposes only. The author has no affiliation with IonQ and is not authorized to speak on behalf of IonQ.
+
+**Important Notes:**
+
+- This code comes with **no guarantee of correctness** or fitness for any particular purpose
+- The metrics, performance claims, and comparisons presented are **simulations only** and not based on empirical measurements from actual quantum hardware
+- Results may vary significantly when running on real quantum devices due to noise, decoherence, and other practical limitations
+- Users are responsible for validating any results independently before relying on them for decision-making
+- The simulated "competitor" topology is a simplified model and may not accurately reflect real-world competing hardware performance
+
+This code is provided under the MIT License. Use at your own risk.
