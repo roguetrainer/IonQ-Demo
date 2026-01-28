@@ -50,6 +50,8 @@ python connectivity_challenge.py
 ### Visual Aid
 Show `figures/topology_comparison_12qubits.svg` side-by-side during the explanation.
 
+![Comparison](./03-Hardware-Connectivity/figures/topology_comparison_12qubits.svg)
+
 ---
 
 ## 💰 Demo 2: Finance – American Option Pricing
