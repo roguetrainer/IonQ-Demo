@@ -1,6 +1,6 @@
 # Quantum Computing Demos on IonQ Hardware
 
-These three demos showcase how IonQ's trapped-ion quantum computers solve real-world problems in your business. Each demo highlights specific capabilities—all-to-all connectivity and high gate fidelity—that directly impact your bottom line.
+These five demos showcase how IonQ's trapped-ion quantum computers solve real-world problems in your business. Each demo highlights specific capabilities—all-to-all connectivity, high gate fidelity, error mitigation, and circuit optimization—that directly impact your bottom line.
 
 ## Demo 1: Finance – American Option Pricing via Amplitude Estimation
 
@@ -57,13 +57,71 @@ Run a Quantum Fourier Transform (QFT) or a MaxCut optimization on a fully connec
 
 ---
 
-## Why These Three Demos Tell Your Story
+## Demo 4: Error Mitigation – Debiasing & Sharpening
 
-When presenting to your stakeholders, your narrative should be: **"Quality over Quantity."**
+**The Business Impact:** Quantum algorithms that fail on raw hardware can be made production-ready through software-level error mitigation—no new quantum hardware needed.
 
-- **Finance Demo** shows how connectivity lets you build complex financial algorithms that competitors simply cannot execute reliably.
-- **Chemistry Demo** shows how precision (fidelity) unlocks real-world scientific breakthroughs that require accuracy.
-- **Hardware Demo** gives you the hard numbers—gates counted, circuits compiled, results verified—that prove IonQ's architectural advantage.
+**What You'll Demonstrate:** Use IonQ's Debiasing and Sharpening techniques to transform a noise-sensitive algorithm (Bernstein-Vazirani) from ~15% success rate to ~92% success rate.
+
+**How It Works:**
+
+- **Debiasing (Symmetrization):** Compiler generates 100+ circuit variants that systematically over-correct hardware errors. Averaging these variants cancels systematic biases while preserving the quantum signal.
+- **Sharpening (Majority Voting):** For algorithms with known answer states, use plurality voting to recognize and boost the correct state, suppressing noise.
+
+**Why This Matters:**
+
+- Available TODAY on Azure Quantum and Amazon Braket
+- No additional quantum hardware required—pure software optimization
+- Can turn a "failed" experiment into useful results
+- Direct leverage: Every IonQ customer can use this immediately
+
+See [04-ErrorMitigation-Debiasing/](04-ErrorMitigation-Debiasing/) for full implementation and README.
+
+---
+
+## Demo 5: Circuit Compression – ZX Calculus for Trapped Ions
+
+**The Business Impact:** Quantum circuits can be compressed by 75%+ by recognizing "Phase Gadgets" that are native to IonQ's Mølmer–Sørensen gates.
+
+**What You'll Demonstrate:** Show how a chemistry circuit with 50 CNOT gates can be compressed to just 5 MS gates using ZX Calculus optimization—a 90% reduction in critical gates.
+
+**How It Works:**
+
+- **Phase Gadgets:** Common patterns in chemistry (CX-Rz-CX) that are inefficient with CNOTs but perfect for native MS gates
+- **ZX Calculus:** A graphical representation where circuits become "spiders" (nodes) that can be fused
+- **Compiler Magic:** ZX-aware compilation recognizes these patterns and maps them directly to native gates
+
+**Why This Matters:**
+
+- **Superconducting competitors:** Must decompose their CNOT basis to match the hardware—no further optimization possible
+- **Trapped Ions (IonQ):** MS gates are symmetric and align perfectly with phase gadgets. ZX optimization collapses these patterns into single operations
+- **Chemistry Advantage:** VQE and QAOA circuits are full of phase gadgets. This is why IonQ dominates chemistry simulations
+- **Practical Result:** 4-5x shallower circuits → fewer errors → better results
+
+See [05-Compilation-ZXCalculus/](05-Compilation-ZXCalculus/) for full implementation and README.
+
+---
+
+## Why These Five Demos Tell Your Story
+
+When presenting to your stakeholders, your narrative should be: **"Quality over Quantity: The Complete Story."**
+
+- **Demo 1 (Hardware):** All-to-all connectivity eliminates SWAP overhead—proving architectural superiority
+- **Demo 2 (Finance):** Compact arithmetic circuits let you solve financial problems competitors cannot
+- **Demo 3 (Chemistry):** Native gates and high fidelity unlock scientific breakthroughs
+- **Demo 4 (Error Mitigation):** Software innovations bridge the gap to production-ready results
+- **Demo 5 (Compilation):** ZX Calculus shows why trapped ions are the natural fit for chemistry and optimization
+
+Together, they form a comprehensive narrative: **Physics (Architecture) + Software (Optimization) + Innovation (Error Mitigation) = Unmatched Performance.**
+
+---
+
+## Documentation
+
+For strategic context and deeper physics understanding:
+
+- [Docs/ROADMAP_AND_STRATEGY.md](Docs/ROADMAP_AND_STRATEGY.md) – The Oxford Ionics acquisition and future roadmap
+- [Docs/PHYSICS_AND_GATES.md](Docs/PHYSICS_AND_GATES.md) – Deep dive into IonQ's native gates, ZX Calculus, and why trapped ions excel
 
 ---
 
