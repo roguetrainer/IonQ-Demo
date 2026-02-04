@@ -1,6 +1,12 @@
 # Quantum Computing Demos on IonQ Hardware
 
-These five demos showcase how IonQ's trapped-ion quantum computers solve real-world problems in your business. Each demo highlights specific capabilities—all-to-all connectivity, high gate fidelity, error mitigation, and circuit optimization—that directly impact your bottom line.
+These eight demos showcase how IonQ's trapped-ion quantum computers solve real-world problems in your business. Each demo highlights specific capabilities—all-to-all connectivity, high gate fidelity, error mitigation, and circuit optimization—that directly impact your bottom line.
+
+## Complete Demo Lineup
+
+**Demos 1-3:** Foundational IonQ advantages (hardware, finance, chemistry)
+**Demos 4-5:** Software optimization (error mitigation, compilation)
+**Demos 6-8:** Advanced applications (optimization, materials, error correction)
 
 ## Demo 1: Finance – American Option Pricing via Amplitude Estimation
 
@@ -102,17 +108,54 @@ See [05-Compilation-ZXCalculus/](05-Compilation-ZXCalculus/) for full implementa
 
 ---
 
-## Why These Five Demos Tell Your Story
+## Demo 6: Optimization – QAOA for MaxCut on Fully Connected Graphs
+
+**The Business Impact:** Solve optimization problems on dense, interconnected datasets where every element connects to every other.
+
+**Why IonQ Wins:** Complete graphs (K_n) require all-to-all connectivity. On grid-based hardware, this is impossible without massive SWAP chains. On IonQ, every interaction is native.
+
+See [06-Optimization-QAOA/](06-Optimization-QAOA/) for full implementation and visualization.
+
+## Demo 7: Material Science – Simulating Spin Chains (Heisenberg Model)
+
+**The Business Impact:** Simulate material properties and design better batteries, magnets, and semiconductors.
+
+**Why IonQ Wins:** Deep circuits required. IonQ's 99.9% fidelity enables longer time evolutions before decoherence.
+
+See [07-Materials-Heisenberg/](07-Materials-Heisenberg/) for full implementation.
+
+## Demo 8: Error Correction – Steane Code Encoding Efficiency
+
+**The Business Impact:** Error correction is the path to fault-tolerant quantum computing. Topology determines code efficiency.
+
+**Why IonQ Wins:** All-to-all connectivity enables efficient codes (13-20 qubits per logical) vs competitors' inefficient codes (100+ qubits per logical).
+
+See [08-ErrorCorrection-Steane/](08-ErrorCorrection-Steane/) for full implementation and analysis.
+
+## Why These Eight Demos Tell Your Complete Story
 
 When presenting to your stakeholders, your narrative should be: **"Quality over Quantity: The Complete Story."**
 
-- **Demo 1 (Hardware):** All-to-all connectivity eliminates SWAP overhead—proving architectural superiority
-- **Demo 2 (Finance):** Compact arithmetic circuits let you solve financial problems competitors cannot
-- **Demo 3 (Chemistry):** Native gates and high fidelity unlock scientific breakthroughs
-- **Demo 4 (Error Mitigation):** Software innovations bridge the gap to production-ready results
-- **Demo 5 (Compilation):** ZX Calculus shows why trapped ions are the natural fit for chemistry and optimization
+### Part 1: Foundational Advantages
 
-Together, they form a comprehensive narrative: **Physics (Architecture) + Software (Optimization) + Innovation (Error Mitigation) = Unmatched Performance.**
+- **Demo 1 (Hardware):** All-to-all connectivity eliminates SWAP overhead
+- **Demo 2 (Finance):** Compact arithmetic circuits enable reliable pricing
+- **Demo 3 (Chemistry):** Native gates and high fidelity unlock breakthroughs
+
+### Part 2: Software Innovation
+
+- **Demo 4 (Error Mitigation):** Debiasing + Sharpening convert failures to successes
+- **Demo 5 (Compilation):** ZX Calculus compresses circuits by 75%+
+
+### Part 3: Advanced Applications
+
+- **Demo 6 (Optimization):** QAOA MaxCut shows the connectivity advantage
+- **Demo 7 (Materials):** Fidelity enables scientific discovery
+- **Demo 8 (Error Correction):** Topology determines the path to fault tolerance
+
+**The Complete Narrative:** Physics (Architecture) + Software (Optimization) + Innovation (Error Mitigation) + Future (QEC) = Unmatched Performance
+
+This progression shows IonQ wins not just in NISQ (near-term), but across the entire quantum computing timeline.
 
 ---
 
